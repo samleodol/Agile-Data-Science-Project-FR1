@@ -1,0 +1,36 @@
+
+.recommendation-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  position: relative;
+}
+
+.movie-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hover-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.movie-card:hover .hover-info {
+  display: block;
+}
